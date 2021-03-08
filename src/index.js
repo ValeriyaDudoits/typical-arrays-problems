@@ -15,17 +15,13 @@ exports.max = function max(array) {
 }
 
 exports.avg = function avg(array) {
-  if (array === undefined) {
-    return 0;
-  } else
-  if (array.length === 0) {
-    return 0;
-  } else
+  if (array === undefined || array.length === 0) return 0;
   let sum = 0;
-  let result = 0;
   for (let i = 0; i < array.length; i++) {
     sum += array[i];
   }
+  console.log(sum);
   result = sum / array.length;
   return +result;
+
 }
