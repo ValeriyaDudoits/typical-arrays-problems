@@ -1,4 +1,3 @@
-
 exports.min = function min(array) {
 
   let result = Math.min.apply(Math, array);
